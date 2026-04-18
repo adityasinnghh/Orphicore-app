@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+        Orphicore logo mark:
+        A stylized "O" formed by two arcs with a gap at the top,
+        suggesting an open eye / portal / orphic symbol.
+        Inner diamond accent at center.
+        All in the orphicore purple palette.
+    -->
+
+    <!-- Drop shadow layer (subtle) -->
+    <path
+        android:pathData="M54,55m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="36"
+                android:startY="37"
+                android:endX="72"
+                android:endY="73"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#7C3AED33" />
+                <item android:offset="1.0" android:color="#00000000" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,54m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0"
+        android:strokeWidth="1.2"
+        android:strokeColor="#7C3AED55" />
+
+    <!-- Main outer arc — LEFT side (bottom-left to top-left, going clockwise) -->
+    <!-- Full outer circle, broken at the top gap -->
+    <!-- We draw as two arcs: left arc and right arc with a gap at top -->
+
+    <!-- Left outer arc: from top-gap-left (~320°) sweeping CCW to bottom (~180°) to top-gap-right (~40°) -->
+    <!-- Rendered as a single almost-full circle stroke with a gap -->
+    <!-- Using path arcs: start at top-left gap, arc around to top-right gap -->
+
+    <!-- Outer ring arc (broken at top, ~300 degrees) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="
+            M54,35.5
+            A18.5,18.5 0 1 0 54.1,35.5"
+        android:strokeWidth="3.5"
+        android:strokeColor="#A78BFA" />
+
+    <!-- Cleaner approach: full outer circle -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,54m-18.5,0a18.5,18.5 0,1 1,37 0a18.5,18.5 0,1 1,-37 0"
+        android:strokeWidth="3.5"
+        android:strokeColor="#00000000" />
+
+    <!-- Outer ring - main stroke -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M44,38.2 A18.5,18.5 0 1 0 64,38.2"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeColor="#A78BFA" />
+
+    <!-- Gap cap left dot -->
+    <path
+        android:fillColor="#E879F9"
+        android:pathData="M44,38.2m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+
+    <!-- Gap cap right dot -->
+    <path
+        android:fillColor="#A78BFA"
+        android:pathData="M64,38.2m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+
+    <!-- Inner ring arc (same gap at top, slightly smaller) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M46.5,40.5 A12,12 0 1 0 61.5,40.5"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeColor="#7C3AED88" />
+
+    <!-- Center diamond / rhombus mark -->
+    <path
+        android:fillColor="#A78BFA"
+        android:pathData="M54,48 L57.5,54 L54,60 L50.5,54 Z" />
+
+    <!-- Center diamond inner highlight -->
+    <path
+        android:fillColor="#E8D5FF"
+        android:pathData="M54,50.5 L56,54 L54,57.5 L52,54 Z" />
+
+    <!-- Vertical tick line above diamond (inside the gap) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,36 L54,42"
+        android:strokeWidth="1.2"
+        android:strokeColor="#E879F988"
+        android:strokeLineCap="round" />
+
+    <!-- Two small horizontal serifs on the tick -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M51.5,42 L56.5,42"
+        android:strokeWidth="0.8"
+        android:strokeColor="#A78BFA77"
+        android:strokeLineCap="round" />
+
+    <!-- Tiny sparkle top-right of logo -->
+    <path
+        android:fillColor="#E879F9AA"
+        android:pathData="M68,36 L69,38.5 L71.5,39.5 L69,40.5 L68,43 L67,40.5 L64.5,39.5 L67,38.5 Z" />
+
+</vector>

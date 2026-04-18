@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "60707282783",
+    "project_id": "orphicore-9106c",
+    "storage_bucket": "orphicore-9106c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60707282783:android:d84646e5ad0ad65e8420ea",
+        "android_client_info": {
+          "package_name": "com.example.orphicore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnR4XyHfub3nfA82qxoTe5sfwynfNWv4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
